@@ -9,4 +9,42 @@ void cordiccart2pol(data_t x, data_t y, data_t * r,  data_t * theta)
 {
 	// Write your code here
 	
+	// look at https://kastner.ucsd.edu/hlsbook/ pg 76
+	// this 
+
+	// look at https://en.wikipedia.org/wiki/CORDIC
+	// this cordic converts a, n to <x,y>
+
+	// var current theta = 0
+	// var current x = x
+	// var current y = y
+
+	// goal is to rotate the vector <x,y> to be on the x axis
+	// we find the length r as r = x
+	// we find the angle theta as <x,y> rotated by theta will be <r,0>
+
+	// if x < 0:
+		// if y >= 0:
+			// c_x = -y
+			// c_y = x
+			// theta += 90
+		// else:
+			// c_x = y
+			// c_y = -x
+			// theta -= 90 
+	
+	for (int j=0; j<NO_ITER; j++){
+		// set the shift first?
+
+		// if y > 0
+			// x -= y right shift i 
+			// y -= x right shift i // we need the old x before the adjustment
+			// theta -= angles[j]
+		// elif y < 0
+			// x += y right shift i
+			// y -= x right shift i
+			// theta += angles[j]
+	}
+	// r = x
+	// theta out = theta
 }
