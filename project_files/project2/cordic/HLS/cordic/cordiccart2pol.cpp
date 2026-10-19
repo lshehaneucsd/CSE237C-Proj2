@@ -17,27 +17,26 @@ void cordiccart2pol(data_t x, data_t y, data_t * r,  data_t * theta)
 	// look at https://en.wikipedia.org/wiki/CORDIC
 	// this cordic converts a, n to <x,y>
 
-	data_t x_current = x;
-	data_t y_current = y;
-	data_t theta_current = 0;
+	data_t x_current;
+	data_t y_current;
+	data_t theta_current;
 
 	// goal is to rotate the vector <x,y> to be on the x axis
 	// we find the length r as r = x
 	// we find the angle theta as <x,y> rotated by theta will be <r,0>
 
 	// initial 90 degree rotation to fix the quadrant
-	if (x_current < 0){
-		if (y_current >=0){ // Quadrant 2 to 1
-			x_current = y;
-			y_current = - x;
-			theta_current = HALF_PI;
-		}
-		else // Quadrant 3 to 4
-		{
-			x_current = - y;
-			y_current = x;
-			theta_current = -HALF_PI;
-		}
+	// but if it is in Quadrant 1 or 4, it swaps, to remove a conditional
+	if (y >=0){ // cw rotation
+		x_current = y;
+		y_current = - x;
+		theta_current = HALF_PI;
+	}
+	else // ccw rotation
+	{
+		x_current = - y;
+		y_current = x;
+		theta_current = -HALF_PI;
 	}
 	
 	for (int j=0; j<NO_ITER; j++){
