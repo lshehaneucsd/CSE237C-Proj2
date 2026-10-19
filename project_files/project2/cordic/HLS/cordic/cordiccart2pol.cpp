@@ -4,6 +4,8 @@ data_t Kvalues[NO_ITER] = {1,	0.500000000000000,	0.250000000000000,	0.1250000000
 
 data_t angles[NO_ITER] = {0.785398163397448,	0.463647609000806,	0.244978663126864,	0.124354994546761,	0.0624188099959574,	0.0312398334302683,	0.0156237286204768,	0.00781234106010111,	0.00390623013196697,	0.00195312251647882,	0.000976562189559320,	0.000488281211194898,	0.000244140620149362,	0.000122070311893670,	6.10351561742088e-05,	3.05175781155261e-05};
 
+const data_t HALF_PI = 1.57079632;
+const data_t INV_CORDIC_GAIN = 0.60725293505;
 
 void cordiccart2pol(data_t x, data_t y, data_t * r,  data_t * theta)
 {
@@ -15,36 +17,47 @@ void cordiccart2pol(data_t x, data_t y, data_t * r,  data_t * theta)
 	// look at https://en.wikipedia.org/wiki/CORDIC
 	// this cordic converts a, n to <x,y>
 
-	// var current theta = 0
-	// var current x = x
-	// var current y = y
+	data_t x_current = x;
+	data_t y_current = y;
+	data_t theta_current = 0;
 
 	// goal is to rotate the vector <x,y> to be on the x axis
 	// we find the length r as r = x
 	// we find the angle theta as <x,y> rotated by theta will be <r,0>
 
-	// if x < 0:
-		// if y >= 0:
-			// c_x = -y
-			// c_y = x
-			// theta += 90
-		// else:
-			// c_x = y
-			// c_y = -x
-			// theta -= 90 
+	// initial 90 degree rotation to fix the quadrant
+	if (x_current < 0){
+		if (y_current >=0){ // Quadrant 2 to 1
+			x_current = y;
+			y_current = - x;
+			theta_current = HALF_PI;
+		}
+		else // Quadrant 3 to 4
+		{
+			x_current = - y;
+			y_current = x;
+			theta_current = -HALF_PI;
+		}
+	}
 	
 	for (int j=0; j<NO_ITER; j++){
-		// set the shift first?
+		// set the shift first
+		data_t x_temp = x_current >> j;
+		data_t y_temp = y_current >> j;
 
-		// if y > 0
-			// x -= y right shift i 
-			// y -= x right shift i // we need the old x before the adjustment
-			// theta -= angles[j]
-		// elif y < 0
-			// x += y right shift i
-			// y -= x right shift i
-			// theta += angles[j]
+		if (y_current > 0){ // negative ccw rotation
+			x_current += y_temp;
+			y_current -= x_temp;
+			theta_current += angles[j];
+		}
+		else // positive cw rotation
+		{
+			x_current -= y_temp;
+			y_current += x_temp;
+			theta_current -= angles[j];
+		}
 	}
-	// r = x
-	// theta out = theta
+
+	*r = x_current * INV_CORDIC_GAIN;
+	*theta = theta_current;
 }
