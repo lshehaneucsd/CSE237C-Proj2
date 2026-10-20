@@ -5,9 +5,10 @@
 
 #define NO_ITER 16
 
-typedef int   coef_t; // what is this for?
-typedef ap_fixed<16,3> data_t; // ap_fixed<16,1> 1 int bit?
-typedef float acc_t; // what is this for?
+typedef int coef_t;
+typedef float acc_t;
+
+typedef ap_fixed<16,3> data_t;
 
 void cordiccart2pol(data_t x, data_t y, data_t * r,  data_t * theta);
 
