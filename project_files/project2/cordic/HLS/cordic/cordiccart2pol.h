@@ -3,7 +3,7 @@
 
 #include <ap_int.h>
 
-#define NO_ITER 16
+#define NO_ITER 20
 
 typedef int coef_t;
 typedef float acc_t;
