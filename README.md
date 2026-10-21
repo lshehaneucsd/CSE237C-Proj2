@@ -4,3 +4,4 @@ Based off the projects in [Ryan Kastner's Coursework](https://github.com/Kastner
 
 path to proj
 cd CSE237C-Proj2/project_files/project2/cordic/HLS/cordic
+python3 tester.py
