@@ -9,54 +9,56 @@ const data_t INV_CORDIC_GAIN = 0.60725293505;
 
 void cordiccart2pol(data_t x, data_t y, data_t * r,  data_t * theta)
 {
-	// Write your code here
-	
-	// look at https://kastner.ucsd.edu/hlsbook/ pg 76
-	// this 
+  // Write your code here
 
-	// look at https://en.wikipedia.org/wiki/CORDIC
-	// this cordic converts a, n to <x,y>
+  // look at https://kastner.ucsd.edu/hlsbook/ pg 76
+  // this
 
-	data_t x_current;
-	data_t y_current;
-	data_t theta_current;
+  // look at https://en.wikipedia.org/wiki/CORDIC
+  // this cordic converts a, n to <x,y>
 
-	// goal is to rotate the vector <x,y> to be on the x axis
-	// we find the length r as r = x
-	// we find the angle theta as <x,y> rotated by theta will be <r,0>
+  data_t x_current;
+  data_t y_current;
+  data_t theta_current;
 
-	// initial 90 degree rotation to fix the quadrant
-	// but if it is in Quadrant 1 or 4, it swaps, to remove a conditional
+  // goal is to rotate the vector <x,y> to be on the x axis
+  // we find the length r as r = x
+  // we find the angle theta as <x,y> rotated by theta will be <r,0>
+
+  // initial 90 degree rotation to fix the quadrant
+  // but if it is in Quadrant 1 or 4, it swaps, to remove a conditional
 	if (y >=0){ // cw rotation
-		x_current = y;
+    x_current = y;
 		y_current = - x;
-		theta_current = HALF_PI;
+    theta_current = HALF_PI;
 	}
 	else // ccw rotation
-	{
+  {
 		x_current = - y;
-		y_current = x;
-		theta_current = -HALF_PI;
-	}
-	
+    y_current = x;
+    theta_current = -HALF_PI;
+  }
+
 	for (int j=0; j<NO_ITER; j++){
-		// set the shift first
-		data_t x_temp = x_current >> j;
-		data_t y_temp = y_current >> j;
+    // set the shift first
+    // data_t x_temp = x_current >> j;
+    // data_t y_temp = y_current >> j;
+    data_t x_temp = x_current * Kvalues[j];
+    data_t y_temp = y_current * Kvalues[j];
 
 		if (y_current > 0){ // negative ccw rotation
-			x_current += y_temp;
-			y_current -= x_temp;
-			theta_current += angles[j];
+      x_current += y_temp;
+      y_current -= x_temp;
+      theta_current += angles[j];
 		}
 		else // positive cw rotation
-		{
-			x_current -= y_temp;
-			y_current += x_temp;
-			theta_current -= angles[j];
-		}
-	}
+    {
+      x_current -= y_temp;
+      y_current += x_temp;
+      theta_current -= angles[j];
+    }
+  }
 
-	*r = x_current * INV_CORDIC_GAIN;
-	*theta = theta_current;
+  *r = x_current * INV_CORDIC_GAIN;
+  *theta = theta_current;
 }

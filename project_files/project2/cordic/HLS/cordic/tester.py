@@ -56,11 +56,21 @@ def run_question(q, varis=None):
     rows = [["Design", "Latency", "Sample II", "BRAM", "DSP", "LUT", "FF", "Throughput (MHz)", "RMSE (r)", "RMSE (theta)"]]
     
     for v in varis:
+        # Clean up stale files before running this variant so stale metrics are not reused
+        for stale in [f"{TOP_MODULE_NAME}_csynth.rpt", f"{TOP_MODULE_NAME}_test.log", f"{TOP_MODULE_NAME}_test.bin"]:
+            p = os.path.join(BASE_SOURCE_DIR, stale)
+            if os.path.exists(p):
+                os.remove(p)
+
         for ext in ["h", "cpp"]:
             src = os.path.join(q_dir, f"{TOP_MODULE_NAME}_{v}.{ext}")
             dest = os.path.join(BASE_SOURCE_DIR, f"{TOP_MODULE_NAME}.{ext}")
             if os.path.exists(src):
                 shutil.copy(src, dest)
+            elif ext == "cpp":
+                common_src = os.path.join(q_dir, f"{TOP_MODULE_NAME}.{ext}")
+                if os.path.exists(common_src):
+                    shutil.copy(common_src, dest)
 
         subprocess.run(["touch", os.path.join(BASE_SOURCE_DIR, f"{TOP_MODULE_NAME}.cpp")])
         test_out = subprocess.run(["make", "test"], cwd=BASE_SOURCE_DIR, capture_output=True, text=True)
