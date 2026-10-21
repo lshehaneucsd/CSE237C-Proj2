@@ -56,7 +56,6 @@ def run_question(q, varis=None):
     rows = [["Design", "Latency", "Sample II", "BRAM", "DSP", "LUT", "FF", "Throughput (MHz)", "RMSE (r)", "RMSE (theta)"]]
     
     for v in varis:
-        # Clean up stale files before running this variant so stale metrics are not reused
         for stale in [f"{TOP_MODULE_NAME}_csynth.rpt", f"{TOP_MODULE_NAME}_test.log", f"{TOP_MODULE_NAME}_test.bin"]:
             p = os.path.join(BASE_SOURCE_DIR, stale)
             if os.path.exists(p):
