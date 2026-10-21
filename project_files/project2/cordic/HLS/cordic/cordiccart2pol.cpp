@@ -43,7 +43,7 @@ void cordiccart2pol(data_t x, data_t y, data_t * r,  data_t * theta)
     // set the shift first
     // data_t x_temp = x_current >> j;
     // data_t y_temp = y_current >> j;
-    data_t x_temp = x_current * Kvalues[j];
+    data_t x_temp = x_current * Kvalues[j]; // SHOULD I SWITCH to SHIFTS?
     data_t y_temp = y_current * Kvalues[j];
 
 		if (y_current > 0){ // negative ccw rotation
