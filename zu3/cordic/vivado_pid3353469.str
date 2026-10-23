@@ -1,0 +1,786 @@
+/*
+
+AMD Vivado v2024.2 (64-bit) [Major: 2024, Minor: 2]
+SW Build: 5239630 on Fri Nov 08 22:34:34 MST 2024
+IP Build: 5239520 on Sun Nov 10 16:12:51 MST 2024
+IP Build: 5239520 on Sun Nov 10 16:12:51 MST 2024
+
+Process ID (PID): 3353469
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Thu Oct 22 18:46:29 PDT 2026
+Time zone: 	Pacific Standard Time (America/Los_Angeles)
+
+OS: NAME="Linux Mint"
+OS Version: 7.0.0-31-generic
+OS Architecture: amd64
+Available processors (cores): 8
+LSB Release Description: NAME=Linux Mint
+
+Display: 23.0
+Screen size: 1288x896
+Local screen bounds: x = 0, y = 0, width = 1288, height = 856
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+OS font scaling: 100%
+Anti-Alias Enabled: false
+
+Java version: 	21.0.1 64-bit
+
+Java home: 	/software/common/Xilinx_Vitis/Vivado/2024.2/tps/lnx64/jre21.0.1_12
+Java executable: 	/software/common/Xilinx_Vitis/Vivado/2024.2/tps/lnx64/jre21.0.1_12/bin/java
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.uiScale.enabled=false, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, -XX:+UseStringDeduplication, -XX:MaxGCPauseMillis=200, -XX:ParallelGCThreads=4, -XX:+ParallelRefProcEnabled, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-opens=java.desktop/sun.awt.X11=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, --add-opens=java.desktop/sun.awt.X11=ALL-UNNAMED, -XX:NewSize=80m, -XX:MaxNewSize=80m, -Xms512m, -Xmx4072m, -Xss10m, -Xrs]
+Java initial memory (-Xms): 	512 MB
+Java maximum memory (-Xmx):	 3 GB
+
+User name: 	lshehane
+User home directory: /home/linux/ieng6/students/582/lshehane
+User working directory: /home/linux/ieng6/CSE237C_FA26_001/lshehane/CSE237C-Proj2/zu3/cordic
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /software/common/Xilinx_Vitis/Vivado
+HDI_APPROOT: /software/common/Xilinx_Vitis/Vivado/2024.2
+RDI_DATADIR: /software/common/Xilinx_Vitis/SharedData/2024.2/data:/software/common/Xilinx_Vitis/Vivado/2024.2/data
+RDI_BINDIR: /software/common/Xilinx_Vitis/Vivado/2024.2/bin
+
+Vivado preferences file: /home/linux/ieng6/students/582/lshehane/.Xilinx/Vivado/2024.2/vivado.xml
+Vivado preferences directory: /home/linux/ieng6/students/582/lshehane/.Xilinx/Vivado/2024.2/
+Vivado layouts directory: /home/linux/ieng6/students/582/lshehane/.Xilinx/Vivado/2024.2/data/layouts
+PlanAhead jar file: 	/software/common/Xilinx_Vitis/Vivado/2024.2/lib/classes/planAhead.jar
+Vivado log file: 	/home/linux/ieng6/CSE237C_FA26_001/lshehane/CSE237C-Proj2/zu3/cordic/vivado.log
+Vivado journal file: 	/home/linux/ieng6/CSE237C_FA26_001/lshehane/CSE237C-Proj2/zu3/cordic/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-3353469-ieng6-304.ucsd.edu
+Non-Default Parameters:	[]
+
+Xilinx & AMD Environment Variables
+--------------------------------------------------------------------------------------------
+RDI_APPROOT: /software/common/Xilinx_Vitis/Vivado/2024.2
+RDI_BASEROOT: /software/common/Xilinx_Vitis/Vivado
+RDI_BINROOT: /software/common/Xilinx_Vitis/Vivado/2024.2/bin
+RDI_BUILD: yes
+RDI_DATADIR: /software/common/Xilinx_Vitis/SharedData/2024.2/data:/software/common/Xilinx_Vitis/Vivado/2024.2/data
+RDI_INSTALLROOT: /software/common/Xilinx_Vitis
+RDI_INSTALLVER: 2024.2
+RDI_JAVA_PLATFORM: 
+RDI_JAVA_VERSION: 21.0.1_12
+RDI_LIBDIR: /software/common/Xilinx_Vitis/Vivado/2024.2/lib/lnx64.o/Default:/software/common/Xilinx_Vitis/Vivado/2024.2/lib/lnx64.o
+RDI_OPT_EXT: .o
+RDI_PATCHROOT: 
+RDI_PLATFORM: lnx64
+RDI_PREPEND_PATH: /software/common/Xilinx_Vitis/Vitis/2024.2/bin:/software/common/Xilinx_Vitis/Vivado/2024.2/ids_lite/ISE/bin/lin64
+RDI_PROG: /software/common/Xilinx_Vitis/Vivado/2024.2/bin/unwrapped/lnx64.o/vivado
+RDI_SESSION_INFO: /home/linux/ieng6/CSE237C_FA26_001/lshehane/CSE237C-Proj2/zu3/cordic:ieng6-304.ucsd.edu_1792719953_3353401
+RDI_SHARED_DATA: /software/common/Xilinx_Vitis/SharedData/2024.2/data
+RDI_TPS_ROOT: /software/common/Xilinx_Vitis/Vivado/2024.2/tps/lnx64
+RDI_USE_JDK21: True
+SHELL: /bin/bash
+XILINX: /software/common/Xilinx_Vitis/Vivado/2024.2/ids_lite/ISE
+XILINX_DSP: /software/common/Xilinx_Vitis/Vivado/2024.2/ids_lite/ISE
+XILINX_HLS: /software/common/Xilinx_Vitis/Vitis/2024.2
+XILINX_PLANAHEAD: /software/common/Xilinx_Vitis/Vivado/2024.2
+XILINX_SDK: /software/common/Xilinx_Vitis/Vitis/2024.2
+XILINX_VITIS: /software/common/Xilinx_Vitis/Vitis/2024.2
+XILINX_VIVADO: /software/common/Xilinx_Vitis/Vivado/2024.2
+
+
+GUI allocated memory:	512 MB
+GUI max memory:		4,072 MB
+Engine allocated memory: 1,434 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,465 MB. GUI used memory: 64 MB. Current time: 10/22/26, 6:46:30 PM PDT
+selectButton(PAResourceEtoH.GettingStartedView_CREATE_NEW_PROJECT, "Create Project"); // t (PAResourceEtoH.GettingStartedView_CREATE_NEW_PROJECT)
+// Run Command: PAResourceCommand.PACommandNames_NEW_PROJECT
+selectButton("NEXT", "Next", "New Project"); // JButton (NEXT)
+setText(PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, "project_2"); // ad (PAResourceOtoP.ProjectNameChooser_PROJECT_NAME)
+selectButton("NEXT", "Next", "New Project"); // JButton (NEXT)
+// [GUI Memory]: 91 MB (+93235kb) [00:00:46]
+// [Engine Memory]: 1,562 MB (+1486535kb) [00:00:46]
+// [GUI Memory]: 100 MB (+4503kb) [00:00:46]
+// [GUI Memory]: 134 MB (+30374kb) [00:00:46]
+selectButton("NEXT", "Next", "New Project"); // JButton (NEXT)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,610 MB. GUI used memory: 65 MB. Current time: 10/22/26, 6:46:50 PM PDT
+selectTab(PAResourceOtoP.PartChooser_TABBED_PANE, (HResource) null, "Boards", 1); // g (PAResourceOtoP.PartChooser_TABBED_PANE)
+// [GUI Memory]: 202 MB (+64284kb) [00:00:53]
+// [Engine Memory]: 1,641 MB (+660kb) [00:00:53]
+// [GUI Memory]: 356 MB (+150395kb) [00:00:58]
+setText("PAResourceAtoD.BoardChooser_BOARD_TABLE_SEARCH_FIELD", "zu3"); // OverlayTextField (PAResourceAtoD.BoardChooser_BOARD_TABLE_SEARCH_FIELD)
+selectTreeTable(PAResourceAtoD.BoardChooser_BOARD_TABLE, "Zynq UltraScale+ AUP-ZU3 4GB Development Board ; Zynq UltraScale+ AUP-ZU3 4GB Development Board ; Zynq UltraScale+ AUP-ZU3 4GB Development Board ; realdigital.org ; 1.0 ; Zynq UltraScale+ AUP-ZU3 4GB Development Board ; 784 ; RevC ; 252 ; 70560 ; 141120 ; 216 ; 0 ; 360 ; 3604 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 3 ;  ; 0 ;  ;  ; 0 ;  ;  ; 0 ; 100 ; 100 ; E ; 0.825 ; 0.850 ; 0.876", 0, "Zynq UltraScale+ AUP-ZU3 4GB Development Board", 0, false); // n (PAResourceAtoD.BoardChooser_BOARD_TABLE)
+selectButton("NEXT", "Next", "New Project"); // JButton (NEXT)
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: create_project project_2 /home/linux/ieng6/CSE237C_FA26_001/lshehane/CSE237C-Proj2/zu3/cordic/project_2 -part xczu3eg-sfvc784-2-e 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 1,780 MB (+60318kb) [00:01:13]
+// WARNING: HEventQueue.dispatchEvent() is taking  3579 ms.
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/software/common/Xilinx_Vitis/Vivado/2024.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,802 MB. GUI used memory: 73 MB. Current time: 10/22/26, 6:47:17 PM PDT
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: create_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:09 . Memory (MB): peak = 7871.902 ; gain = 146.969 ; free physical = 17007 ; free virtual = 25675 
+// TclEventType: BOARD_MODIFIED
+// Tcl Message: set_property board_part realdigital.org:aup-zu3-4gb:part0:1.0 [current_project] 
+// Elapsed time: 13 seconds
+selectButton("FINISH", "Finish", "New Project"); // JButton (FINISH)
+// 'g' command handler elapsed time: 46 seconds
+dismissDialog("Create Project"); // bh (Create Project Progress)
+dismissDialog("New Project"); // f (dialog0)
+// Elapsed time: 295 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // ai (PAResourceItoN.MainMenuMgr_WINDOW, Window)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // ai (PAResourceItoN.MainMenuMgr_WINDOW, Window)
+selectMenu(PAResourceItoN.MainMenuMgr_HELP, "Help"); // ai (PAResourceItoN.MainMenuMgr_HELP, Help)
+dismissMenu(PAResourceItoN.MainMenuMgr_HELP, "Help"); // ai (PAResourceItoN.MainMenuMgr_HELP, Help)
+setText("RDIResource.SearchCommandComponent_QUICK_ACCESS", "flow", true); // OverlayTextField (RDIResource.SearchCommandComponent_QUICK_ACCESS)
+// Run Command: PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Create Block Design]", 6, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_CREATE_NEW_DIAGRAM
+selectButton(RDIResource.BaseDialog_OK, "OK", "Create Block Design"); // a (RDIResource.BaseDialog_OK)
+// 'P' command handler elapsed time: 4 seconds
+dismissDialog("Create Block Design"); // aB (design_1)
+// TclEventType: LOAD_FEATURE
+// Tcl Message: create_bd_design "design_1" 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: Wrote  : </home/linux/ieng6/CSE237C_FA26_001/lshehane/CSE237C-Proj2/zu3/cordic/project_2/project_2.srcs/sources_1/bd/design_1/design_1.bd>  
+// TclEventType: RSB_OPEN_DIAGRAM
+// WARNING: HEventQueue.dispatchEvent() is taking  1153 ms.
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // x (PAResourceOtoP.PAViews_PROJECT_SUMMARY, PlanAheadTabProject Summary)
+// Tcl Message: create_bd_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 7962.887 ; gain = 80.984 ; free physical = 16805 ; free virtual = 25551 
+dismissDialog("Create Block Design"); // bh (Create Block Design Progress)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 05m:34s
+// [Engine Memory]: 1,893 MB (+24438kb) [00:06:48]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,906 MB. GUI used memory: 87 MB. Current time: 10/22/26, 6:52:50 PM PDT
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 05m:36s
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+dismissDialog("Open IP Catalog"); // bh (Open IP Catalog Progress)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// Tcl (Dont Echo) Command: 'rdi::info_commands {device::*}'
+// Tcl (Dont Echo) Command: 'rdi::info_commands {debug::*}'
+// Tcl (Dont Echo) Command: 'rdi::info_commands {*}'
+// WARNING: HEventQueue.dispatchEvent() is taking  2841 ms.
+// Elapsed time: 13 seconds
+setText("RDIResource.SearchCommandComponent_QUICK_ACCESS", "Settings...", true); // OverlayTextField (RDIResource.SearchCommandComponent_QUICK_ACCESS)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,926 MB. GUI used memory: 106 MB. Current time: 10/22/26, 6:53:12 PM PDT
+// Run Command: PAResourceCommand.PACommandNames_BITSTREAM_SETTINGS
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP]", 6, true); // s (PAResourceQtoS.SettingsDialog_PROJECT_TREE, Project Tree) - Node
+expandTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP]", 6); // s (PAResourceQtoS.SettingsDialog_PROJECT_TREE, Project Tree)
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP, Repository]", 7, false); // s (PAResourceQtoS.SettingsDialog_PROJECT_TREE, Project Tree)
+selectButton(PAResourceQtoS.SettingsProjectIPRepositoryPage_ADD_REPOSITORY, "Add Repository", "Settings"); // C (PAResourceQtoS.SettingsProjectIPRepositoryPage_ADD_REPOSITORY, Add Repository)
+// Elapsed time: 21 seconds
+setFolderChooser("/home/linux/ieng6/CSE237C_FA26_001/lshehane/CSE237C-Proj2/zu3/cordic/cordiccart2pol.comp/hls/impl/ip");
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property  ip_repo_paths  /home/linux/ieng6/CSE237C_FA26_001/lshehane/CSE237C-Proj2/zu3/cordic/cordiccart2pol.comp/hls/impl/ip [current_project] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/linux/ieng6/CSE237C_FA26_001/lshehane/CSE237C-Proj2/zu3/cordic/cordiccart2pol.comp/hls/impl/ip'. 
+selectButton(RDIResource.AddRepositoryInfoDialog_OK, "OK", "Add Repository"); // a (RDIResource.AddRepositoryInfoDialog_OK)
+dismissDialog("Add Repository"); // b (dialog2)
+selectButton(RDIResource.BaseDialog_APPLY, "Apply", "Settings"); // a (RDIResource.BaseDialog_APPLY)
+selectButton(RDIResource.BaseDialog_OK, "OK", "Settings"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Settings"); // e (dialog3)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,034 MB. GUI used memory: 106 MB. Current time: 10/22/26, 6:53:50 PM PDT
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IP Catalog", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, false, false, false, false, false, true); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE) - Double Click
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 641, 0); // cD (RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR)
+collapseTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 1); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 1); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, false, false, false, false, true, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_IP_SETTINGS, "IP Settings..."); // aq (PAResourceCommand.PACommandNames_IP_SETTINGS, ip_settings_menu)
+// Run Command: PAResourceCommand.PACommandNames_IP_SETTINGS
+expandTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP]", 6); // s (PAResourceQtoS.SettingsDialog_PROJECT_TREE, Project Tree)
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP, Repository]", 7, false); // s (PAResourceQtoS.SettingsDialog_PROJECT_TREE, Project Tree)
+selectButton(PAResourceQtoS.SettingsProjectIPRepositoryPage_REFRESH_ALL, "Refresh All", "Settings"); // a (PAResourceQtoS.SettingsProjectIPRepositoryPage_REFRESH_ALL)
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog -rebuild 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/linux/ieng6/CSE237C_FA26_001/lshehane/CSE237C-Proj2/zu3/cordic/cordiccart2pol.comp/hls/impl/ip'. 
+// Elapsed time: 14 seconds
+expandTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Text Editor]", 6); // s (PAResourceQtoS.SettingsDialog_OPTIONS_TREE, Options Tree)
+collapseTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Text Editor]", 6); // s (PAResourceQtoS.SettingsDialog_OPTIONS_TREE, Options Tree)
+dismissDialog("Settings"); // e (dialog3)
+// Elapsed time: 180 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 403, 136); // cD (RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+// Elapsed time: 67 seconds
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, false, false, false, false, true, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE) - Popup Trigger
+setText("RDIResource.SearchCommandComponent_QUICK_ACCESS", "se"); // OverlayTextField (RDIResource.SearchCommandComponent_QUICK_ACCESS)
+selectMenuItem(PAResourceCommand.PACommandNames_IP_SETTINGS, "IP Settings..."); // aq (PAResourceCommand.PACommandNames_IP_SETTINGS, ip_settings_menu)
+// Run Command: PAResourceCommand.PACommandNames_IP_SETTINGS
+expandTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP]", 6); // s (PAResourceQtoS.SettingsDialog_PROJECT_TREE, Project Tree)
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP, Repository]", 7, false); // s (PAResourceQtoS.SettingsDialog_PROJECT_TREE, Project Tree)
+// Elapsed time: 16 seconds
+dismissDialog("Settings"); // e (dialog3)
+selectButton(RDIResource.HToolBar_SETTINGS, "IP Catalog_settings"); // w (RDIResource.HToolBar_SETTINGS, IP Catalog_settings): TRUE
+// Elapsed time: 48 seconds
+selectButton(RDIResource.OptionsView_RESET_OPTIONS_TO_DEFAULT_VALUES, (String) null); // C (RDIResource.OptionsView_RESET_OPTIONS_TO_DEFAULT_VALUES)
+// WARNING: HEventQueue.dispatchEvent() is taking  1224 ms.
+selectCheckBoxTree(PAResourceAtoD.CatalogFilterPanel_CATALOG_FILTER_PANEL_CATALOGFILTERTREE, "[, Supported Output Products]", 0, true, false, ui.utils.collection.couples.TriState.True); // a.b (PAResourceAtoD.CatalogFilterPanel_CATALOG_FILTER_PANEL_CATALOGFILTERTREE) - Node
+selectButton(RDIResource.OptionsView_RESET_OPTIONS_TO_DEFAULT_VALUES, (String) null); // C (RDIResource.OptionsView_RESET_OPTIONS_TO_DEFAULT_VALUES)
+selectButton(RDIResource.HToolBar_SETTINGS, "IP Catalog_settings"); // w (RDIResource.HToolBar_SETTINGS, IP Catalog_settings): FALSE
+// PAPropertyPanels.initPanels (/software/common/Xilinx_Vitis/SharedData/2024.2/data) elapsed time: 1.6s
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 1, "User Repository", 0, true); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE) - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  1599 ms.
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, false, false, false, false, false, true); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE) - Double Click
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, false, false, false, false, true, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PROPERTIES, "Properties..."); // aq (RDIResourceCommand.RDICommands_PROPERTIES, edit_properties_menu)
+// Run Command: RDIResourceCommand.RDICommands_PROPERTIES
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, false, false, false, false, true, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE) - Popup Trigger
+selectMenuItem(PAResourceAtoD.CoreTreeTablePanel_ADD_IP_TO_REPOSITORY, "Add IP to Repository..."); // aq (PAResourceAtoD.CoreTreeTablePanel_ADD_IP_TO_REPOSITORY)
+// Elapsed time: 17 seconds
+setFileChooser("/home/linux/ieng6/CSE237C_FA26_001/lshehane/CSE237C-Proj2/zu3/cordic/cordiccart2pol.comp/hls/impl/ip/xilinx_com_hls_cordiccart2pol_1_0.zip");
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog -add_ip /home/linux/ieng6/CSE237C_FA26_001/lshehane/CSE237C-Proj2/zu3/cordic/cordiccart2pol.comp/hls/impl/ip/xilinx_com_hls_cordiccart2pol_1_0.zip -repo_path /home/linux/ieng6/CSE237C_FA26_001/lshehane/CSE237C-Proj2/zu3/cordic/cordiccart2pol.comp/hls/impl/ip 
+// Tcl Message: INFO: [IP_Flow 19-949] Unzipped '/home/linux/ieng6/CSE237C_FA26_001/lshehane/CSE237C-Proj2/zu3/cordic/cordiccart2pol.comp/hls/impl/ip/xilinx_com_hls_cordiccart2pol_1_0.zip' into repository '/home/linux/ieng6/CSE237C_FA26_001/lshehane/CSE237C-Proj2/zu3/cordic/cordiccart2pol.comp/hls/impl/ip'. INFO: [IP_Flow 19-725] Reloaded user IP repository '/home/linux/ieng6/CSE237C_FA26_001/lshehane/CSE237C-Proj2/zu3/cordic/cordiccart2pol.comp/hls/impl/ip' 
+dismissDialog("Add IP"); // bh (Add IP Progress)
+// PAPropertyPanels.initPanels (/software/common/Xilinx_Vitis/SharedData/2024.2/data) elapsed time: 0.4s
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 1, "User Repository", 0, true); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE) - Node
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, false, false, false, false, true, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PROPERTIES, "Properties..."); // aq (RDIResourceCommand.RDICommands_PROPERTIES, edit_properties_menu)
+// Run Command: RDIResourceCommand.RDICommands_PROPERTIES
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, false, false, false, false, true, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE) - Popup Trigger
+selectButton(RDIResource.HToolBar_SETTINGS, "Properties_settings"); // w (RDIResource.HToolBar_SETTINGS, Properties_settings): TRUE
+selectButton(RDIResource.HToolBar_SETTINGS, "Properties_settings"); // w (RDIResource.HToolBar_SETTINGS, Properties_settings): FALSE
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, false, false, false, false, true, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_IP_SETTINGS, "IP Settings..."); // aq (PAResourceCommand.PACommandNames_IP_SETTINGS, ip_settings_menu)
+// Run Command: PAResourceCommand.PACommandNames_IP_SETTINGS
+expandTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP]", 6); // s (PAResourceQtoS.SettingsDialog_PROJECT_TREE, Project Tree)
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP, Repository]", 7, false); // s (PAResourceQtoS.SettingsDialog_PROJECT_TREE, Project Tree)
+selectButton(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove", "Settings"); // C (RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, Remove)
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property  ip_repo_paths  {} [current_project] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+selectButton(PAResourceQtoS.SettingsProjectIPRepositoryPage_ADD_REPOSITORY, "Add Repository", "Settings"); // C (PAResourceQtoS.SettingsProjectIPRepositoryPage_ADD_REPOSITORY, Add Repository)
+// Elapsed time: 39 seconds
+dismissFolderChooser();
+selectButton(RDIResource.BaseDialog_APPLY, "Apply", "Settings"); // a (RDIResource.BaseDialog_APPLY)
+// Elapsed time: 230 seconds
+selectButton(PAResourceQtoS.SettingsProjectIPRepositoryPage_ADD_REPOSITORY, "Add Repository", "Settings"); // C (PAResourceQtoS.SettingsProjectIPRepositoryPage_ADD_REPOSITORY, Add Repository)
+// Elapsed time: 14 seconds
+setFolderChooser("/home/linux/ieng6/CSE237C_FA26_001/lshehane/CSE237C-Proj2/zu3/cordic/cordiccart2pol.comp/hls/impl/ip");
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property  ip_repo_paths  /home/linux/ieng6/CSE237C_FA26_001/lshehane/CSE237C-Proj2/zu3/cordic/cordiccart2pol.comp/hls/impl/ip [current_project] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/linux/ieng6/CSE237C_FA26_001/lshehane/CSE237C-Proj2/zu3/cordic/cordiccart2pol.comp/hls/impl/ip'. 
+expandTree(RDIResource.AddRepositoryInfoDialog_REPOSITORY_TREE, "[root, /home/linux/ieng6/CSE237C_FA26_001/lshehane/CSE237C-Proj2/zu3/cordic/cordiccart2pol.comp/hls/impl/ip, <html>IPs<span style='color: rgb(128, 128, 128)'>&nbsp;(1)</span></html>]", 1); // a (RDIResource.AddRepositoryInfoDialog_REPOSITORY_TREE)
+selectButton(RDIResource.AddRepositoryInfoDialog_OK, "OK", "Add Repository"); // a (RDIResource.AddRepositoryInfoDialog_OK)
+dismissDialog("Add Repository"); // b (dialog7)
+selectButton(RDIResource.BaseDialog_APPLY, "Apply", "Settings"); // a (RDIResource.BaseDialog_APPLY)
+selectButton(RDIResource.BaseDialog_OK, "OK", "Settings"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Settings"); // e (dialog3)
+// [Engine Memory]: 2,053 MB (+68506kb) [00:20:31]
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+// PAPropertyPanels.initPanels (/software/common/Xilinx_Vitis/SharedData/2024.2/data) elapsed time: 1.7s
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 1, "User Repository", 0, true); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE) - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  1721 ms.
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+// Elapsed time: 43 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 535, 120); // cD (RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectButton((HResource) null, "IP Catalog_compatibleFilter"); // w (IP Catalog_compatibleFilter): FALSE
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "VITIS HLS IP ;  ;  ;  ; ", 1); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Cordiccart2pol ;  ;  ; Included ; xilinx.com:hls:cordiccart2pol:1.0", 2, "Cordiccart2pol", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,054 MB. GUI used memory: 110 MB. Current time: 10/22/26, 7:07:40 PM PDT
+// Elapsed time: 13 seconds
+selectButton(PAResourceAtoD.CoreDetailsView_COMPATIBLE_FAMILIES, "Compatible Families"); // h (PAResourceAtoD.CoreDetailsView_COMPATIBLE_FAMILIES)
+expandTree(PAResourceAtoD.CompatibleFamiliesDialog_COMPATIBLE_FAMILIES_DIALOG_TREE, "[Compatible Families, Zynq-7000 (ALL)]", 0); // a (PAResourceAtoD.CompatibleFamiliesDialog_COMPATIBLE_FAMILIES_DIALOG_TREE)
+collapseTree(PAResourceAtoD.CompatibleFamiliesDialog_COMPATIBLE_FAMILIES_DIALOG_TREE, "[Compatible Families, Zynq-7000 (ALL)]", 0); // a (PAResourceAtoD.CompatibleFamiliesDialog_COMPATIBLE_FAMILIES_DIALOG_TREE)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,341 MB. GUI used memory: 110 MB. Current time: 10/22/26, 7:10:15 PM PDT
+// Elapsed time: 296 seconds
+dismissDialog("Compatible Families"); // b (dialog8)
+selectButton(RDIResource.HToolBar_SETTINGS, "IP Catalog_settings"); // w (RDIResource.HToolBar_SETTINGS, IP Catalog_settings): TRUE
+selectButton(RDIResource.HToolBar_SETTINGS, "IP Catalog_settings"); // w (RDIResource.HToolBar_SETTINGS, IP Catalog_settings): FALSE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false, false, false, false, true, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree) - Popup Trigger
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, true, false, false, false, true, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_IP_SETTINGS, "IP Settings..."); // aq (PAResourceCommand.PACommandNames_IP_SETTINGS, ip_settings_menu)
+// Run Command: PAResourceCommand.PACommandNames_IP_SETTINGS
+expandTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP]", 6); // s (PAResourceQtoS.SettingsDialog_PROJECT_TREE, Project Tree)
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP, Repository]", 7, false); // s (PAResourceQtoS.SettingsDialog_PROJECT_TREE, Project Tree)
+selectList(PAResourceQtoS.SettingsProjectIPRepositoryPage_REPOSITORY_CHOOSER, "/home/linux/ieng6/CSE237C_FA26_001/lshehane/CSE237C-Proj2/zu3/cordic/cordiccart2pol.comp/hls/impl/ip", 0); // ae (PAResourceQtoS.SettingsProjectIPRepositoryPage_REPOSITORY_CHOOSER)
+selectButton(PAResourceQtoS.SettingsProjectIPRepositoryPage_REFRESH_ALL, "Refresh All", "Settings"); // a (PAResourceQtoS.SettingsProjectIPRepositoryPage_REFRESH_ALL)
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog -rebuild 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/linux/ieng6/CSE237C_FA26_001/lshehane/CSE237C-Proj2/zu3/cordic/cordiccart2pol.comp/hls/impl/ip'. 
+dismissDialog("Refresh All IP Repositories"); // bh (Refresh All IP Repositories Progress)
+selectButton(RDIResource.BaseDialog_APPLY, "Apply", "Settings"); // a (RDIResource.BaseDialog_APPLY)
+// [Engine Memory]: 2,170 MB (+15537kb) [00:27:20]
+selectButton(RDIResource.BaseDialog_OK, "OK", "Settings"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Settings"); // e (dialog3)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "VITIS HLS IP ;  ;  ;  ; ", 1); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Cordiccart2pol ;  ; Pre-Production ; Included ; xilinx.com:hls:cordiccart2pol:1.0", 2, "Cordiccart2pol", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Cordiccart2pol ;  ; Pre-Production ; Included ; xilinx.com:hls:cordiccart2pol:1.0", 2, "Cordiccart2pol", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Cordiccart2pol ;  ; Pre-Production ; Included ; xilinx.com:hls:cordiccart2pol:1.0", 2, "Cordiccart2pol", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Cordiccart2pol ;  ; Pre-Production ; Included ; xilinx.com:hls:cordiccart2pol:1.0", 2); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Cordiccart2pol ;  ; Pre-Production ; Included ; xilinx.com:hls:cordiccart2pol:1.0", 2, "Cordiccart2pol", 0, false, false, false, false, false, true); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+selectButton("OptionPane.button", "Add IP to Block Design", "Add IP"); // JButton (OptionPane.button)
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:hls:cordiccart2pol:1.0 cordiccart2pol_0 
+// TclEventType: LOAD_FEATURE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// [Engine Memory]: 2,368 MB (+93959kb) [00:27:33]
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// HMemoryUtils.trashcanNow. Engine heap size: 2,379 MB. GUI used memory: 116 MB. Current time: 10/22/26, 7:13:35 PM PDT
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// PAPropertyPanels.initPanels (cordiccart2pol_0) elapsed time: 0.2s
+dismissDialog("Add IP"); // bh (Add IP Progress)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 26m:20s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 26m:22s
+// Elapsed time: 32 seconds
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // C (PAResourceQtoS.SystemBuilderView_ADD_IP, System_RSB_ADD_IP)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "zyn"); // OverlayTextField (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Zynq UltraScale+ MPSoC", 1, "Zynq UltraScale+ MPSoC", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Zynq UltraScale+ MPSoC", 1, "Zynq UltraScale+ MPSoC", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Zynq UltraScale+ MPSoC", 1); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Zynq UltraScale+ MPSoC", 1, "Zynq UltraScale+ MPSoC", 0, false, false, false, false, false, true); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE) - Double Click
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:zynq_ultra_ps_e:3.5 zynq_ultra_ps_e_0 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: create_bd_cell: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 8179.191 ; gain = 106.000 ; free physical = 16550 ; free virtual = 25333 
+// Tcl Message: endgroup 
+dismissDialog("Add IP"); // bh (Add IP Progress)
+// No Address Blocks Available for network [Network 0]
+// WARNING: HTimer (Open addressing views timer) is taking 541ms to process. Increasing delay to 1300 ms.
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 27m:20s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 27m:22s
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Elapsed time: 11 seconds
+selectButton(PAResourceQtoS.RSBApplyAutomationBar_RUN_BLOCK_AUTOMATION, "Run Block Automation"); // h (PAResourceQtoS.RSBApplyAutomationBar_RUN_BLOCK_AUTOMATION)
+selectButton(RDIResource.BaseDialog_OK, "OK", "Run Block Automation"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Run Block Automation"); // G (dialog9)
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:zynq_ultra_ps_e -config {apply_board_preset "1" }  [get_bd_cells zynq_ultra_ps_e_0] 
+// TclEventType: RSB_SCRIPT_TASK
+// No Address Blocks Available for network [Network 0]
+// Tcl Message: INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change  
+dismissDialog("Run Block Automation"); // bh (Run Block Automation Progress)
+// Elapsed time: 27 seconds
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectButton(PAResourceQtoS.RSBApplyAutomationBar_RUN_CONNECTION_AUTOMATION, "Run Connection Automation"); // h (PAResourceQtoS.RSBApplyAutomationBar_RUN_CONNECTION_AUTOMATION)
+selectButton(RDIResource.BaseDialog_OK, "OK", "Run Connection Automation"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Run Connection Automation"); // G (dialog10)
+// TclEventType: XGUI_UPDATE_GUI_ELEMENT
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_CONNECTION_CHANGE
+// No Address Blocks Available for network [Network 0]
+// TclEventType: XGUI_RESET_GUI_ELEMENT
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/zynq_ultra_ps_e_0/pl_clk0 (99 MHz)} Freq {99} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins cordiccart2pol_0/ap_clk] 
+// Tcl Message: INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 28m:16s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 28m:18s
+// Elapsed time: 12 seconds
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// Tcl Command: 'validate_bd_design'
+// TclEventType: RSB_VALIDATE_DIAGRAM
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: validate_bd_design 
+// Tcl Message: ERROR: [BD 41-758] The following clock pins are not connected to a valid clock source:  /zynq_ultra_ps_e_0/maxihpm0_lpd_aclk  
+// Tcl Message: ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors. 
+// No Address Blocks Available for network [Network 0]
+// Elapsed time: 63 seconds
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK", "Critical Messages"); // f (PAResourceAtoD.CmdMsgDialog_OK)
+dismissDialog("Critical Messages"); // dQ.a (dialog11)
+// Elapsed time: 12 seconds
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // C (PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, System_regenerate_rsb_layout)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+selectButton(PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "System_validate_bd_design_rsb"); // C (PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, System_validate_bd_design_rsb)
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// Tcl Command: 'validate_bd_design'
+// TclEventType: RSB_VALIDATE_DIAGRAM
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: validate_bd_design 
+// Tcl Message: ERROR: [BD 41-758] The following clock pins are not connected to a valid clock source:  /zynq_ultra_ps_e_0/maxihpm0_lpd_aclk  
+// Tcl Message: ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors. 
+// No Address Blocks Available for network [Network 0]
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK", "Critical Messages"); // f (PAResourceAtoD.CmdMsgDialog_OK)
+dismissDialog("Critical Messages"); // dQ.a (dialog12)
+// Elapsed time: 38 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 467, 103); // cD (RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR)
+// Elapsed time: 14 seconds
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Elapsed time: 91 seconds
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Elapsed time: 17 seconds
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// TclEventType: RSB_CONNECTION_CHANGE
+// No Address Blocks Available for network [Network 0]
+// Tcl Message: connect_bd_net [get_bd_pins zynq_ultra_ps_e_0/pl_clk0] [get_bd_pins zynq_ultra_ps_e_0/maxihpm0_lpd_aclk] 
+// Elapsed time: 16 seconds
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectButton(PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "System_validate_bd_design_rsb"); // C (PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, System_validate_bd_design_rsb)
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// Tcl Command: 'validate_bd_design'
+// TclEventType: RSB_VALIDATE_DIAGRAM
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// No Address Blocks Available for network [Network 0]
+// Tcl Message: validate_bd_design 
+// Tcl Message: INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change  
+// Elapsed time: 189 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK", "Critical Messages"); // f (PAResourceAtoD.CmdMsgDialog_OK)
+dismissDialog("Critical Messages"); // dQ.a (dialog13)
+// Elapsed time: 126 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 389, 142); // cD (RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR)
+selectButton(PAResourceOtoP.PlanAheadTab_REFRESH_IP_CATALOG, "Refresh IP Catalog"); // h (PAResourceOtoP.PlanAheadTab_REFRESH_IP_CATALOG)
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog -rebuild -scan_changes 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/linux/ieng6/CSE237C_FA26_001/lshehane/CSE237C-Proj2/zu3/cordic/cordiccart2pol.comp/hls/impl/ip'. 
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status 
+dismissDialog("Refresh IP Catalog"); // bh (Refresh IP Catalog Progress)
+selectButton(PAResourceQtoS.SystemTab_SHOW_IP_STATUS, "Show IP Status"); // h (PAResourceQtoS.SystemTab_SHOW_IP_STATUS)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /cordiccart2pol_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 465, 153, 586, 314, false, false, false, true, false); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /cordiccart2pol_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // an (PAResourceQtoS.SelectMenu_HIGHLIGHT, Highlight)
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // an (PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, IP Documentation)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // an (PAResourceQtoS.SystemBuilderView_ORIENTATION, Orientation)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // an (PAResourceQtoS.SystemBuilderView_PINNING, Pinning)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // an (PAResourceQtoS.SystemBuilderView_PINNING, Pinning)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // an (PAResourceQtoS.SystemBuilderView_ORIENTATION, Orientation)
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // an (PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, IP Documentation)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // an (PAResourceQtoS.SystemBuilderView_ORIENTATION, Orientation)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // an (PAResourceQtoS.SystemBuilderView_PINNING, Pinning)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // an (PAResourceQtoS.SystemBuilderView_ORIENTATION, Orientation)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectButton(PAResourceQtoS.SystemTab_BLOCKS, "/cordiccart2pol_0"); // h (PAResourceQtoS.SystemTab_BLOCKS)
+ // selectButton(PAResourceItoN.IPStatusTablePanel_MORE_INFO, "Upgrade IP"); // o.d (PAResourceItoN.IPStatusTablePanel_MORE_INFO)
+selectButton(PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED, "Upgrade Selected"); // a (PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED)
+// Run Command: PAResourceCommand.PACommandNames_UPGRADE_IP
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// No Address Blocks Available for network [Network 0]
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: upgrade_ip [get_ips  design_1_cordiccart2pol_0_0] -log ip_upgrade.log 
+// Tcl Message: Upgrading '/home/linux/ieng6/CSE237C_FA26_001/lshehane/CSE237C-Proj2/zu3/cordic/project_2/project_2.srcs/sources_1/bd/design_1/design_1.bd' 
+// Tcl Message: INFO: [IP_Flow 19-3422] Upgraded design_1_cordiccart2pol_0_0 (Cordiccart2pol 1.0) from revision 2114840651 to revision 2114840664 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: Wrote  : </home/linux/ieng6/CSE237C_FA26_001/lshehane/CSE237C-Proj2/zu3/cordic/project_2/project_2.srcs/sources_1/bd/design_1/design_1.bd>  Wrote  : </home/linux/ieng6/CSE237C_FA26_001/lshehane/CSE237C-Proj2/zu3/cordic/project_2/project_2.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  
+// Tcl Message: INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/linux/ieng6/CSE237C_FA26_001/lshehane/CSE237C-Proj2/zu3/cordic/project_2/ip_upgrade.log'. 
+// Tcl Message: export_ip_user_files -of_objects [get_ips design_1_cordiccart2pol_0_0] -no_script -sync -force -quiet 
+selectButton("OptionPane.button", "OK", "Upgrade IP"); // JButton (OptionPane.button)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 38m:58s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 39m:00s
+// Elapsed time: 14 seconds
+dismissDialog("Generate Output Products"); // W (dialog14)
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[Coretcl 2-1279] The upgrade of 'design_1_cordiccart2pol_0_0' has identified issues that may require user intervention. Please review the upgrade log '/home/linux/ieng6/CSE237C_FA26_001/lshehane/CSE237C-Proj2/zu3/cordic/project_2/ip_upgrade.log', and verify that the upgraded IP is correctly configured.", 1); // b (PAResourceAtoD.CmdMsgDialog_MESSAGES)
+selectButton(PAResourceQtoS.RSBApplyAutomationBar_RUN_CONNECTION_AUTOMATION, "Run Connection Automation"); // h (PAResourceQtoS.RSBApplyAutomationBar_RUN_CONNECTION_AUTOMATION)
+selectButton(RDIResource.BaseDialog_OK, "OK", "Run Connection Automation"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Run Connection Automation"); // G (dialog15)
+// TclEventType: XGUI_UPDATE_GUI_ELEMENT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/zynq_ultra_ps_e_0/pl_clk0 (99 MHz)} Clk_slave {/zynq_ultra_ps_e_0/pl_clk0 (99 MHz)} Clk_xbar {/zynq_ultra_ps_e_0/pl_clk0 (99 MHz)} Master {/zynq_ultra_ps_e_0/M_AXI_HPM0_LPD} Slave {/cordiccart2pol_0/s_axi_control} ddr_seg {Auto} intc_ip {New AXI SmartConnect} master_apm {0}}  [get_bd_intf_pins cordiccart2pol_0/s_axi_control] 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: XGUI_RESET_GUI_ELEMENT
+// Tcl Message: Slave segment '/cordiccart2pol_0/s_axi_control/Reg' is being assigned into address space '/zynq_ultra_ps_e_0/Data' at <0x8000_0000 [ 64K ]>. 
+dismissDialog("Run Connection Automation"); // bh (Run Connection Automation Progress)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 39m:34s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 39m:36s
+// Elapsed time: 11 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OPEN_MESSAGES_VIEW, "Open Messages View", "Critical Messages"); // a (PAResourceAtoD.CmdMsgDialog_OPEN_MESSAGES_VIEW)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Critical Messages"); // a (dialog16)
+// Elapsed time: 98 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, design_1, General Messages, [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.. Please check your design and connect them as needed: . /cordiccart2pol_0/ap_start. /cordiccart2pol_0/x. /cordiccart2pol_0/y. . ]", 2, false); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+selectTree(PAResourceQtoS.SystemTreeView_SYSTEM_TREE, "[design_1]", 0, true, false, false, false, true, false); // a (PAResourceQtoS.SystemTreeView_SYSTEM_TREE) - Popup Trigger - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, design_1, General Messages, [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.. Please check your design and connect them as needed: . /cordiccart2pol_0/ap_start. /cordiccart2pol_0/x. /cordiccart2pol_0/y. . ]", 2, false); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aa
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1 (design_1.bd)]", 1, true, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_OPEN_FILE_WITH, "Open With"); // an (PAResourceCommand.PACommandNames_OPEN_FILE_WITH, Open With)
+selectMenu(PAResourceCommand.PACommandNames_OPEN_FILE_WITH, "Open With"); // an (PAResourceCommand.PACommandNames_OPEN_FILE_WITH, Open With)
+selectMenuItem(PAResourceCommand.PACommandNames_CREATE_TOP_HDL, "Create HDL Wrapper..."); // aq (PAResourceCommand.PACommandNames_CREATE_TOP_HDL, create_top_hdl_menu)
+// Run Command: PAResourceCommand.PACommandNames_CREATE_TOP_HDL
+selectButton(RDIResource.BaseDialog_OK, "OK", "Create HDL Wrapper"); // a (RDIResource.BaseDialog_OK)
+// 'af' command handler elapsed time: 4 seconds
+dismissDialog("Create HDL Wrapper"); // a (dialog17)
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_CLOSE_DIAGRAM
+// Tcl Message: make_wrapper -files [get_files /home/linux/ieng6/CSE237C_FA26_001/lshehane/CSE237C-Proj2/zu3/cordic/project_2/project_2.srcs/sources_1/bd/design_1/design_1.bd] -top 
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: INFO: [BD 5-943] Reserving offset range <0x8000_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing. INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_0: SmartConnect design_1_axi_smc_0 is in Low-Area Mode. 
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: Wrote  : </home/linux/ieng6/CSE237C_FA26_001/lshehane/CSE237C-Proj2/zu3/cordic/project_2/project_2.srcs/sources_1/bd/design_1/design_1.bd>  Wrote  : </home/linux/ieng6/CSE237C_FA26_001/lshehane/CSE237C-Proj2/zu3/cordic/project_2/project_2.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: Verilog Output written to : /home/linux/ieng6/CSE237C_FA26_001/lshehane/CSE237C-Proj2/zu3/cordic/project_2/project_2.gen/sources_1/bd/design_1/synth/design_1.v Verilog Output written to : /home/linux/ieng6/CSE237C_FA26_001/lshehane/CSE237C-Proj2/zu3/cordic/project_2/project_2.gen/sources_1/bd/design_1/sim/design_1.v Verilog Output written to : /home/linux/ieng6/CSE237C_FA26_001/lshehane/CSE237C-Proj2/zu3/cordic/project_2/project_2.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v 
+// Tcl Message: make_wrapper: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 8310.570 ; gain = 49.496 ; free physical = 16450 ; free virtual = 25271 
+// TclEventType: FILE_SET_CHANGE
+// Create Top HDL Elapsed Time: 11.9s
+// Tcl Message: add_files -norecurse /home/linux/ieng6/CSE237C_FA26_001/lshehane/CSE237C-Proj2/zu3/cordic/project_2/project_2.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v 
+// Elapsed time: 11 seconds
+dismissDialog("Create HDL Wrapper"); // bh (Create HDL Wrapper Progress)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 41m:52s
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, design_1, General Messages, [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.. Please check your design and connect them as needed: . /cordiccart2pol_0/ap_start. /cordiccart2pol_0/x. /cordiccart2pol_0/y. . ]", 2, false); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 41m:58s
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 42m:00s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 42m:02s
+selectButton(PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "System_validate_bd_design_rsb"); // C (PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, System_validate_bd_design_rsb)
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// 'dQ' command handler elapsed time: 24 seconds
+// Elapsed time: 25 seconds
+selectButton("OptionPane.button", "Rerun Validate Design", "Validate Design"); // JButton (OptionPane.button)
+// Tcl Command: 'validate_bd_design -force'
+// TclEventType: RSB_VALIDATE_DIAGRAM
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_CLOSE_DIAGRAM
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: validate_bd_design -force 
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: INFO: [BD 5-943] Reserving offset range <0x8000_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing. INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_0: SmartConnect design_1_axi_smc_0 is in Low-Area Mode. 
+// Tcl Message: INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: COMPOSITE_FILE_CHANGE
+dismissDialog("Validate Design"); // bh (Validate Design Progress)
+selectButton("OptionPane.button", "OK", "Validate Design"); // JButton (OptionPane.button)
+// Elapsed time: 20 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 21, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save", "Save Project"); // a (PAResourceQtoS.SaveProjectUtils_SAVE)
+// TclEventType: RSB_SAVE_DIAGRAM
+dismissDialog("Save Project"); // ac.d (dialog18)
+// Tcl Message: save_bd_design 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: Wrote  : </home/linux/ieng6/CSE237C_FA26_001/lshehane/CSE237C-Proj2/zu3/cordic/project_2/project_2.srcs/sources_1/bd/design_1/design_1.bd>  Wrote  : </home/linux/ieng6/CSE237C_FA26_001/lshehane/CSE237C-Proj2/zu3/cordic/project_2/project_2.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  
+dismissDialog("Save Constraints"); // bh (Save Constraints Progress)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 43m:04s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 43m:06s
+selectButton(RDIResource.BaseDialog_YES, "Yes", "No Implementation Results Available"); // a (RDIResource.BaseDialog_YES)
+dismissDialog("No Implementation Results Available"); // u (dialog19)
+selectButton(RDIResource.BaseDialog_OK, "OK", "Launch Runs"); // a (RDIResource.BaseDialog_OK)
+// 'cM' command handler elapsed time: 13 seconds
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Launch Runs"); // cP (dialog20)
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run. 
+// Tcl Message: Verilog Output written to : /home/linux/ieng6/CSE237C_FA26_001/lshehane/CSE237C-Proj2/zu3/cordic/project_2/project_2.gen/sources_1/bd/design_1/synth/design_1.v Verilog Output written to : /home/linux/ieng6/CSE237C_FA26_001/lshehane/CSE237C-Proj2/zu3/cordic/project_2/project_2.gen/sources_1/bd/design_1/sim/design_1.v Verilog Output written to : /home/linux/ieng6/CSE237C_FA26_001/lshehane/CSE237C-Proj2/zu3/cordic/project_2/project_2.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block cordiccart2pol_0 . 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,311 MB. GUI used memory: 124 MB. Current time: 10/22/26, 7:30:58 PM PDT
+// Tcl Message: INFO: [PSU-0] Address Range of DDR (0x7ff00000 to 0x7fffffff) is reserved by PMU for internal purpose. 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_HPM0_LPD'. A default connection has been created. INFO: [BD 41-1029] Generation completed for the IP Integrator block zynq_ultra_ps_e_0 . 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps8_0_99M . 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: Exporting to file /home/linux/ieng6/CSE237C_FA26_001/lshehane/CSE237C-Proj2/zu3/cordic/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0.hwh Generated Hardware Definition File /home/linux/ieng6/CSE237C_FA26_001/lshehane/CSE237C-Proj2/zu3/cordic/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/design_1_axi_smc_0.hwdef 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc . 
+// Tcl Message: Exporting to file /home/linux/ieng6/CSE237C_FA26_001/lshehane/CSE237C-Proj2/zu3/cordic/project_2/project_2.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh Generated Hardware Definition File /home/linux/ieng6/CSE237C_FA26_001/lshehane/CSE237C-Proj2/zu3/cordic/project_2/project_2.gen/sources_1/bd/design_1/synth/design_1.hwdef 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,512 MB. GUI used memory: 125 MB. Current time: 10/22/26, 7:31:26 PM PDT
+// TclEventType: RUN_LAUNCH
+// HMemoryUtils.trashcanNow. Engine heap size: 2,473 MB. GUI used memory: 124 MB. Current time: 10/22/26, 7:31:28 PM PDT
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs: Time (s): cpu = 00:01:10 ; elapsed = 00:01:05 . Memory (MB): peak = 8640.637 ; gain = 272.043 ; free physical = 16327 ; free virtual = 25179 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/cM.a': 01m:05s
+// Elapsed time: 65 seconds
+dismissDialog("Generate Bitstream"); // bh (Generate Bitstream Progress)
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 44m:18s
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE

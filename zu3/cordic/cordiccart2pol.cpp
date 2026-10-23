@@ -8,7 +8,12 @@ const data_t HALF_PI = 1.57079632679;
 void cordiccart2pol(data_t x, data_t y, data_t * r,  data_t * theta)
 {
 	// Write your code here
-	
+	#pragma HLS INTERFACE mode=s_axilite port=return
+    #pragma HLS INTERFACE mode=s_axilite port=x
+    #pragma HLS INTERFACE mode=s_axilite port=y
+    #pragma HLS INTERFACE mode=s_axilite port=r
+    #pragma HLS INTERFACE mode=s_axilite port=theta
+
 	data_t x_current, y_current, theta_current;
 
 	//Initial 90 degree rotation so that the vector lies in Quadrant I/IV
